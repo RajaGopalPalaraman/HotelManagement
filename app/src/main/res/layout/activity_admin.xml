@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AdminActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_room_margin"
+        android:background="@color/colorLineLiteBlue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="@dimen/activity_admin_date_margin"
+            android:text="@string/date" />
+
+        <TextView
+            android:text="@string/chooseDate"
+            android:onClick="openDatePicker"
+            android:id="@+id/dateTextView"
+            style="?android:attr/spinnerItemStyle"
+            android:singleLine="true"
+            android:clickable="true"
+            android:layout_width="@dimen/activity_admin_date_chooser_width"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:background="@color/colorLineDarkBlue"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loadingGIFView"
+        android:src="@drawable/loading"
+        android:contentDescription="@string/loading" />
+
+    <ScrollView
+        android:id="@+id/roomsView"
+        android:layout_marginBottom="@dimen/activity_room_history_button_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

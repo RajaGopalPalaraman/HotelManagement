@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:layout_width="@dimen/activity_login_edit_text_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_login_edit_text_padding"
+        android:layout_marginBottom="@dimen/activity_login_margin"
+        android:inputType="text"
+        android:hint="@string/userID"
+        android:id="@+id/userID"
+        android:background="@drawable/rect_background"/>
+
+    <EditText
+        android:layout_width="@dimen/activity_login_edit_text_width"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_login_edit_text_padding"
+        android:layout_marginBottom="@dimen/activity_login_margin"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:id="@+id/password"
+        android:background="@drawable/rect_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_account_cliche"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <com.edot.hotelmanagement.RegisterTextView
+            android:id="@+id/registration_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_login_cliche_margin"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onRegister"
+            android:text="@string/register_cliche"
+            android:textColor="@android:color/holo_blue_light" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="@dimen/activity_login_cliche_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onLogin"
+        android:text="@string/login" />
+
+</LinearLayout>

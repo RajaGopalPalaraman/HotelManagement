@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layout_gravity="center"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_registration_layout_margin">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/userName"
+            android:id="@+id/userName"
+            android:layout_marginBottom="@dimen/activity_login_margin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/userID"
+            android:id="@+id/userRegisteredID"
+            android:layout_marginBottom="@dimen/activity_login_margin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/emailID"
+            android:id="@+id/emailID"
+            android:layout_marginBottom="@dimen/activity_login_margin"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:id="@+id/userRegisteredPassword"
+            android:layout_marginBottom="@dimen/activity_login_margin"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:id="@+id/address"
+            android:layout_marginBottom="@dimen/activity_login_margin"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/area"
+            android:id="@+id/area"
+            android:layout_marginBottom="@dimen/activity_login_margin"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city"
+            android:id="@+id/city"
+            android:layout_marginBottom="@dimen/activity_login_margin"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/state"
+            android:id="@+id/state"
+            android:layout_marginBottom="@dimen/activity_login_margin"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_login_margin"
+            android:text="@string/register"
+            android:onClick="registerUser"/>
+
+    </LinearLayout>
+
+</ScrollView>

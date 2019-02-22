@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/touch_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/roomNumber"
+                style="?android:attr/spinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/roomNumber"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="@dimen/room_view_text_size" />
+
+            <TextView
+                android:id="@+id/roomTypeAndGroup"
+                style="?android:attr/spinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/roomTypeInfo"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/room_type_view_text_size" />
+
+            <TextView
+                android:id="@+id/roomDescription"
+                style="?android:attr/spinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@android:color/holo_red_dark"
+                style="?android:attr/spinnerItemStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rs"
+                android:textSize="@dimen/room_cost_view_text_size" />
+
+            <TextView
+                android:id="@+id/roomCost"
+                android:textSize="@dimen/room_cost_view_text_size"
+                style="?android:attr/spinnerItemStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/room_list_line_separator_width"
+        android:layout_margin="@dimen/room_list_line_separator_margin"
+        android:background="@android:color/black"/>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:drawableTop="@drawable/green_tick"
+    android:drawablePadding="@dimen/activity_room_configuration_book_success_padding"
+    android:text="@string/bookingSuccess"
+    android:textColor="@android:color/holo_green_light"
+    android:textSize="@dimen/activity_room_configuration_text_size"
+    android:textAlignment="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
